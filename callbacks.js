@@ -12,3 +12,9 @@ function map(numList, callback){
     return numList*2; 
   } );  
 };
+
+var alphabet = '';
+var letters = ['a', 'b', 'c', 'd'];
+letters.forEach(function(alphabet) {
+    console.log(alphabet);
+});
