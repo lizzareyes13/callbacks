@@ -23,6 +23,16 @@ letters.forEach(function(alphabet) {
     console.log(alphabet);
 });
 
+
+//extension 1
+  var numList = [5, 4 , 3, 2, 1];
+  var callback = mapWith.forEach(
+    function(callback){
+      return numList*2;
+    }
+  );
+
+
 //extension 2
 var nums = [4,1,3]
 nums.reduce(function(sum, value) {
