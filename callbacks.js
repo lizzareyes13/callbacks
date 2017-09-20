@@ -34,7 +34,7 @@ var array = [1,2,3,4];
 function mapWith(array, kalbak) {
 	let output = [];
 	array.forEach(function(kalbak){
-		console.log(kalbak * 2);
+		output.push(kalbak * 2);
 	});
 	return output;
 }
