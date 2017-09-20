@@ -10,11 +10,12 @@ function addS(thing) {
 
 //challenge 3
 function map(numList, callback){
-  var numList = [5, 4, 3, 2, 1];
-  var callback = numList.map(function(callback) {
-    return numList*2; 
-  } );  
-};
+  var output = [];
+ for (let i = 0; i < numList.length; i++) {
+  output.push(callback(array[i]));
+ }
+  return output;
+}
 
 //challenge 4
 var alphabet = '';
