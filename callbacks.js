@@ -30,13 +30,12 @@ letters.forEach(function(alphabet) {
 
 
 //extension 1
-  var numList = [5, 4 , 3, 2, 1];
-  var callback = mapWith.forEach(
-    function(callback){
-      return numList*2;
-    }
-  );
-
+  function mapWith(array, kalbak) {
+  	let output = [];
+	  output.forEach(function(i){
+		output.push(kalbak(array[i]));
+	  });
+  };
 
 //extension 2
 var nums = [4,1,3]
