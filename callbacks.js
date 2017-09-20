@@ -9,12 +9,16 @@ function addS(thing) {
 }
 
 //challenge 3
-function map(numList, callback){
-  var output = [];
- for (let i = 0; i < numList.length; i++) {
-  output.push(callback(array[i]));
- }
-  return output;
+function map(array, kalbak) {
+	let output = [];
+	for (let i = 0; i < array.length; i++) {
+		output.push(kalbak(array[i]));
+    }
+	return output;
+}
+
+function kalbak(input) {
+	return input * 2;
 }
 
 //challenge 4
