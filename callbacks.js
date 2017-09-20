@@ -30,30 +30,18 @@ letters.forEach(function(alphabet) {
 
 
 //extension 1
-// var array = [1,2,3,4];
-// var kalbak = "";
-//   function mapWith(array, kalbak) {
-// 	  forEach() {
-// 	  	return 
-// 	  }
-// };
 var array = [1,2,3,4];
 function mapWith(array, kalbak) {
 	let output = [];
 	array.forEach(function(kalbak){
-		
-		
 		console.log(kalbak * 2);
 	});
 	return output;
 }
-
 function kalbak(input) {
 	return input * 2;
 }
-
 mapWith(array, kalbak);
-
 
 
 //extension 2
