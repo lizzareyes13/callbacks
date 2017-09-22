@@ -79,3 +79,36 @@ function intersection(a,b){
 	return array;
 }
 console.log(intersection([5,6,7,8],[1,2,3,4]));
+
+
+//extension 4
+
+// function unique(arrayName)
+//            {
+//                var newArray=new Array();
+//                label:for(var i=0; i<arrayName.length;i++ )
+//                {  
+//                    for(var j=0; j<newArray.length;j++ )
+//                    {
+//                        if(newArray[j]==arrayName[i]) 
+//                            continue label;
+//                    }
+//                    newArray[newArray.length] = arrayName[i];
+//                }
+//                return newArray;
+//            }
+
+var arr1 = new Array(0,2,4);
+var arr2= new Array(4,5,6);
+var union = unique(arr1.concat(arr2));
+
+console.log(union);
+function unionJack(a, b) {
+   return a.concat(b).reduce(function(prev, cur) {
+       if (prev.indexOf(cur) === -1) prev.push(cur);
+       return prev;
+   }, []);    
+}
+var a = [1,2,4];
+var b = [4,5,6];
+unionJack(a, b);
